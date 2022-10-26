@@ -149,7 +149,6 @@ ul li.active a{
 
   }
   .text.sec-text::before{
-   
     content: "";
     position: absolute;
     top: 0;
