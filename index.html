@@ -1,137 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
-
-#navbar {
-  overflow: hidden;
-  background-color: #90D0E6;
-  display: flex;
-  justify-content: center;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-#navbar a.active {
-  background-color: #CBE6B3;
-  color: black;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-.abc{
-    text-align: center;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-
-<div class="header">
-  <h2>Scroll Down</h2>
-  <p>Scroll down to see the sticky effect.</p>
-</div>
-
-<div id="navbar">
-  <a class="active" href="#">Home</a>
-  <a href="#">Skills</a>
-  <a href="#">Projects</a>
-  <a href="#">Contact</a>
-  <a href="#">Resume</a>
-  <a href="#">About Me</a>
-  
-</div>
-
-<div class="content">
-  <h3>Sticky Navigation Example</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-  <h3 class="abc">under working</h3>
-</div>
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-
+    <div><p id="welcome">Welcome!</p></div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Sateesh</label>
+        <ul>
+            <li class="active" ><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#pro-sect">Project</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Resume</a></li>
+        </ul>
+        <!-- used jQuery for active link status -->
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script type="text/javascript">
+            $(document).on("click","ul li",function(){
+                console.log("cliked")
+                $(this).addClass("active").siblings().removeClass("active")
+            })
+        </script>
+    </nav>
+    <div class="progress-bar">
+        <div class="filled">
+            <p class="pro-value"></p>
+        </div>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure, reiciendis itaque temporibus deserunt dicta mollitia eos facere quas aperiam nobis atque porro tempora aut cumque odit quaerat veniam expedita!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi ullam quo laboriosam eligendi autem exercitationem, cum aspernatur magnam deleniti eveniet, voluptatem minima ipsa! Blanditiis assumenda maxime veritatis voluptatem corrupti!
+        </h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure, reiciendis itaque temporibus deserunt dicta mollitia eos facere quas aperiam nobis atque porro tempora aut cumque odit quaerat veniam expedita!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi ullam quo laboriosam eligendi autem exercitationem, cum aspernatur magnam deleniti eveniet, voluptatem minima ipsa! Blanditiis assumenda maxime veritatis voluptatem corrupti!
+        </h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure, reiciendis itaque temporibus deserunt dicta mollitia eos facere quas aperiam nobis atque porro tempora aut cumque odit quaerat veniam expedita!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi ullam quo laboriosam eligendi autem exercitationem, cum aspernatur magnam deleniti eveniet, voluptatem minima ipsa! Blanditiis assumenda maxime veritatis voluptatem corrupti!
+        </h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure, reiciendis itaque temporibus deserunt dicta mollitia eos facere quas aperiam nobis atque porro tempora aut cumque odit quaerat veniam expedita!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi ullam quo laboriosam eligendi autem exercitationem, cum aspernatur magnam deleniti eveniet, voluptatem minima ipsa! Blanditiis assumenda maxime veritatis voluptatem corrupti!
+        </h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure, reiciendis itaque temporibus deserunt dicta mollitia eos facere quas aperiam nobis atque porro tempora aut cumque odit quaerat veniam expedita!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi ullam quo laboriosam eligendi autem exercitationem, cum aspernatur magnam deleniti eveniet, voluptatem minima ipsa! Blanditiis assumenda maxime veritatis voluptatem corrupti!
+        </h1>
+        <h1 id="pro-sect">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure, reiciendis itaque temporibus deserunt dicta mollitia eos facere quas aperiam nobis atque porro tempora aut cumque odit quaerat veniam expedita!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi ullam quo laboriosam eligendi autem exercitationem, cum aspernatur magnam deleniti eveniet, voluptatem minima ipsa! Blanditiis assumenda maxime veritatis voluptatem corrupti!
+        </h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure, reiciendis itaque temporibus deserunt dicta mollitia eos facere quas aperiam nobis atque porro tempora aut cumque odit quaerat veniam expedita!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi ullam quo laboriosam eligendi autem exercitationem, cum aspernatur magnam deleniti eveniet, voluptatem minima ipsa! Blanditiis assumenda maxime veritatis voluptatem corrupti!
+        </h1>
+    </div>
 </body>
 </html>
+
+<script src="./index.js"></script>

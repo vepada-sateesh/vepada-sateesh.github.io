@@ -1,1 +1,0 @@
-# vepada-sateesh.github.io
