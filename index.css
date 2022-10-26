@@ -122,3 +122,8 @@ ul li.active{
     height: 100%;
     background-image: linear-gradient(to right,red,orange);
 }
+
+/* hamberger */
+#top{
+    border:5px solid rgba(red, green, blue, alpha)
+}
