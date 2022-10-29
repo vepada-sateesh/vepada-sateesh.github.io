@@ -197,15 +197,18 @@ ul li.active a{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: auto;
-    gap:20px
+    gap:15px
 }
 #tech-specs>div{
-    border:2px solid red;
+    /* border:2px solid red; */
     height:144px;
     width:120px;
     background-color: #788097A0;
     text-align: center;
     padding: 20px;
+    border-radius: 12px;
+    padding: 20px;
+    margin: auto;
 }
 #tech-specs>div>img{
     width: 80px;
@@ -252,6 +255,191 @@ ul li.active a{
     font-size: 16px;
     color: #fca61f;
 }
+/* --------------------projects grid---------------------- */
+.projects{
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap:30px;
+    margin: auto;
+    margin-top: 30px;
+}
+.projects>div{
+    padding:18px;
+    border-radius: 15px;
+    width:70%;
+    margin: auto;
+    box-shadow: 0 0.0625em 0.0625em rgb(0 0 0 / 25%), 0 0.125em 0.5em rgb(0 0 0 / 25%);
+}
+.projects>div>img{
+    width: 100%;
+    height: 50%;
+}
+.proj-title{
+    display: flex;
+    justify-content: center;
+    color: #DC143C;
+    margin-top: 10px;
+}
+.proj-dscr{
+    display: flex;
+    text-align: center;
+    padding: 3px;
+    font-size: 12px;
+}
+.proj-Tech-stk{
+    display: flex;
+    text-align: left;
+    
+    font-size: 12px;
+   
+}
+.proj-Tech-stk>span{
+    color: #DC143C;
+    font-weight: bold;
+    margin-right: 5px;
+    text-decoration: underline;
+    font-size: 14px;
+}
+.Proj-icons{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+    /* border: 3px solid teal; */
+}
+.fa-eye{
+    font-size: 25px;
+}
+.fa-github{
+    font-size: 25px;
+}
+.calendar{
+  width:80%;
+}
+/* ------------------git hub status----------------------- */
+#git-headg{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+#git-headg>h3{
+    color: #DC143C;
+    font-size: 35px;
+}
+#github-contr{
+    width:80%;
+    margin: auto;
+    margin-top: 20px;
+    /* border:3px solid red; */
+}
+#git-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    grid-template-rows: auto;
+    /* border:3px solid red; */
+
+    
+}
+#git-cards>div{
+    margin: auto;
+    text-align: center;
+}
+#git-cards>div>img{
+    width:90%;
+    margin: auto;
+}
+/* ----------------------contact Me --------------- */
+#cont-head{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+#cont-head>h3{
+    color: #DC143C;
+    font-size: 35px;
+}
+#phone-no{
+    text-align: center;
+}
+#email-id{
+    text-align: center;
+}
+#github-id{
+    text-align: center;
+}
+#social-icn{
+    display: flex;
+    justify-content: center;
+}
+#social-icn>p{
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 5px;  
+}
+#social-icn>p:first-child{
+    background-color:  rgba(59,130,246,.5);
+}
+#social-icn>p:nth-child(2){
+    background-color: #242D49;
+}
+#social-icn>p:nth-child(3){
+    background-color: #EB4134;
+}
+#social-icn>p>a{
+    color: white;
+    font-weight: 100;
+    padding: 6px;
+    font-weight: bold;
+}
+#msg-feat{
+    text-align: center;
+    margin-top: 15px;
+}
+#msg-feat>input{
+    width:22%;
+    height:35px;
+    border: 1px solid #DC143C;
+    border-radius: 10px;
+    padding: 3px;
+}
+#msg-feat>textarea{
+    border: 1px solid #DC143C;
+    border-radius: 15px;
+    padding: 3px;
+}
+#cont-btn{
+    text-align: center;
+}
+#cont-btn>button{
+    padding: 5px 10px;
+    background-color: #fd3c37;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+#footer{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+#footer>img{
+    position: relative;
+    height:30vh;
+    width: 100%;
+}
+#footer>span{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
   /* ----------------------> media queries <----------------------- */
   @media all and (min-width: 340px) and (max-width: 1024px){
     .checkbtn{
@@ -290,11 +478,11 @@ ul li.active a{
         margin-left: 80%;
         margin-top: 20%;
         border-radius: 50%;
-        padding:10px;
-        font-size: 20px;
-        background-color: black;
         color: white;
-        font-weight: 600;
+        border: none;
+    }
+    .fa-circle-xmark{
+        font-size: 30px;
     }
     .close-btn>h1{
         display: felx;
@@ -325,10 +513,7 @@ ul li.active a{
     .container{
         width:100%
     }
-    .text.sec-text::before{
-        height: 0%;
-        width: 0%;
-      }
+    
       /* ------------------aboutMe secton--------- */
       .aboutME{
         margin-top: 50vh;
@@ -356,7 +541,10 @@ ul li.active a{
         height:60%;
         width:60%;
       }
-      
+      #msg-feat>input{
+        width:40%;
+        height:35px
+    }
 }
 @media all and (min-width: 699px) and (max-width: 957px){
     #tech-specs{
@@ -366,14 +554,14 @@ ul li.active a{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: auto;
-        gap:20px;
+        gap:10px;
     }
     #tech-specs>div{
         margin: auto;
     }
    
 }
-@media all and (min-width: 500px) and (max-width: 698px){
+@media all and (min-width: 525px) and (max-width: 698px){
     #tech-specs{
         width:80%;
         margin: auto;
@@ -381,14 +569,48 @@ ul li.active a{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: auto;
-        gap:20px;
+        gap:10px;
     }
     #tech-specs>div{
         margin: auto;
     }
+    .projects{
+        width:80%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap:20px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .projects>div{
+        width:80%;
+        height:auto;
+        /* border: 3px dashed blue; */
+        margin: auto;
+    }
+    .projects{
+        width:80%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap:30px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #msg-feat>input{
+        width:40%;
+        height:35px;
+        margin-top:10px
+    }
+    
     
 }
-@media all and (min-width: 340px) and (max-width: 499px){
+@media all and (min-width: 340px) and (max-width: 524px){
+    .text.sec-text::before{
+        height: 0%;
+        width: 0%;
+      }
     #tech-specs{
         width:80%;
         margin: auto;
@@ -396,10 +618,33 @@ ul li.active a{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto;
-        gap:20px;
+        gap:10px;
     }
     #tech-specs>div{
         margin: auto;
+    }
+    .projects>div{
+        width:80%;
+        height:auto;
+        /* border: 3px dashed blue; */
+        margin: auto;
+    }
+    .projects{
+        width:80%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap:30px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #msg-feat>input{
+        width:60%;
+        height:35px;
+        margin-top:10px
+    }
+    #msg-feat>textarea{
+        border: 1px solid #DC143C;
     }
     
 }
