@@ -7,10 +7,11 @@
     font-family: Ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
-    font-family: Ubuntu;
+    font-family: 'Ubuntu', sans-serif;
 }
 #welcome{
     text-align: center;
+    color: #DC143C;
 }
 nav{
     background: #ffffff;
@@ -22,12 +23,12 @@ nav{
   
 }
 label.logo{
-    color: black;
     font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
     font-family: cursive;
+    color: #DC143C;
     
 }
 nav ul{
@@ -90,21 +91,24 @@ ul li.active a{
 .profile-intro{
     display: flex;
     justify-content: center;
-    
     width: 80%;
     margin: auto;
+    height: auto;
+    margin-bottom: 100px;
 }
  #left-profile{
     width:70%;
     /* background-color: red; */
     height: 40vh;
+    margin-top: 30px;
     /* border: 20px solid green; */
    
 }
-
 #right-profile{
     width: 30%;
-    margin-left: 20%;
+    margin-left: -10%;
+    text-align: center;
+    border-radius: 100%;
 }
 
 #left-profile>h3{
@@ -120,12 +124,15 @@ ul li.active a{
 }
 
 #right-profile img{
+    margin-left: -4%;
     margin-top: 10%;
-    height:40%
+    border-radius: 50%;
+    border: 0.5px solid #DC143C;
+    padding: 5px;
 }
 /* -------------------------------> typing animation <------------------ */
 .container{
-    margin-top: 0%;
+    margin-top: 30px;
     width:150%
 }
   .container .text{
@@ -160,6 +167,7 @@ ul li.active a{
   }
   .aboutME{
     text-align: center;
+    margin-top: 200px;
   }
   .aboutME span{
     font-size: 40px;
@@ -440,8 +448,43 @@ ul li.active a{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+#resum-sec{
+    text-align: left;
+}
+#resume-btn{
+    margin-top: 20px;
+    background-color: #fd3c37;
+    border: none;
+    border-radius: 3px;
+}
+#resume-btn:hover{
+    background-color: #242D49;
+}
+#resume-btn>a{
+    text-decoration: none;
+    color: white;
+    background-color: #fd3c37;
+    padding: 3px 6px;
+    font-weight: bold;
+}
+#resume-btn>a:hover{
+    background-color: #242D49;
+    padding-bottom: 5px;
+    border-bottom: 5px solid yellow;
+}
+.fa-download{
+    color: white;
+    padding: 3px 6px;
+    font-size: 20px;
+}
   /* ----------------------> media queries <----------------------- */
   @media all and (min-width: 340px) and (max-width: 1024px){
+    #left-profile{
+        width:70%;
+        /* background-color: red; */
+        height: 40vh;
+        margin-top: 0px;
+    }
     .checkbtn{
         display: block;
     }
@@ -645,6 +688,7 @@ ul li.active a{
     }
     #msg-feat>textarea{
         border: 1px solid #DC143C;
+        width: 50%;
     }
     
 }
