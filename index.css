@@ -20,6 +20,7 @@ nav{
     position: sticky;
     top:0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 100;
   
 }
 label.logo{
@@ -295,12 +296,14 @@ ul li.active a{
     text-align: center;
     padding: 3px;
     font-size: 12px;
+    line-height: 20px;
+    font-family: "Ubuntu";
 }
 .proj-Tech-stk{
     display: flex;
     text-align: left;
-    
     font-size: 12px;
+    margin-top: 10px;
    
 }
 .proj-Tech-stk>span{
@@ -450,12 +453,14 @@ ul li.active a{
 }
 #resum-sec{
     text-align: left;
+    
 }
 #resume-btn{
     margin-top: 20px;
     background-color: #fd3c37;
     border: none;
     border-radius: 3px;
+    padding: 10px;
 }
 #resume-btn:hover{
     background-color: #242D49;
@@ -476,6 +481,9 @@ ul li.active a{
     color: white;
     padding: 3px 6px;
     font-size: 20px;
+}
+#calender-css{
+    margin-top: 55px;
 }
   /* ----------------------> media queries <----------------------- */
   @media all and (min-width: 340px) and (max-width: 1024px){
@@ -587,6 +595,9 @@ ul li.active a{
       #msg-feat>input{
         width:40%;
         height:35px
+    }
+    #calender-css{
+        overflow: scroll;
     }
 }
 @media all and (min-width: 699px) and (max-width: 957px){

@@ -33,17 +33,26 @@ setInterval(textloadFun,8000)
 // console.log(document.querySelector("#check").checked)
 
 
-// GitHubCalendar(".calendar", "vepada-sateesh");
+// --------------------------github calender-------------------------------------
+
+
+
+// ----------------------------------------------------------------------------------
+
+    GitHubCalendar(".calendar", "vepada-sateesh");
 
     // or enable responsive functionality:
-    // GitHubCalendar(".calendar", "vepada-sateesh", { responsive: true });
+    GitHubCalendar(".calendar", "vepada-sateesh", { responsive: true });
 
     // Use a proxy
-    // GitHubCalendar(".calendar", "vepada-sateesh", {
-    //    proxy ("vepada-sateesh") {
-    //      return fetch(`https://your-proxy.com/github?user=${"vepada-sateesh"}`)
-    //    }
-    // }).then(r => r.text())
+    GitHubCalendar(".calendar", "vepada-sateesh", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${username}`)
+       }
+    }).then(r => r.text())
+
+
+// --------------------------------------------------------------------------------------------------
 
     function sendMail(){
         // console.log(document.querySelector("#name").value)
