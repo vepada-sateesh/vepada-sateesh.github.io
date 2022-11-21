@@ -76,8 +76,8 @@ ul li.active a{
 }
 /* -----------------> progress-bar <-------------------------- */
 .progress-bar{
-    position: sticky;
-    top:0;
+    position: fixed;
+    margin-top: -20px;
     width: 100%;
     height:1vh;
 }
