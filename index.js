@@ -73,4 +73,24 @@ setInterval(textloadFun,8000)
     }
     
 
-    
+// --------------------------------------------->
+
+
+const welcomeloadfun=()=>{
+    let data =  document.getElementById("welcome")
+    setTimeout(()=>{
+       data.textContent = "welcome!"
+       data.style.color = "#DC143C"
+    },0)
+    setTimeout(()=>{
+        data.textContent="Hi, Iam sateesh vepada"
+        data.style.color="blue"
+    },500)
+    setTimeout(()=>{
+        data.textContent="Iam a Full Stack Web Developer"
+        data.style.color = "red"
+    },1000)
+
+}
+welcomeloadfun()
+setInterval(welcomeloadfun,2000)

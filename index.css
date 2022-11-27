@@ -80,6 +80,7 @@ ul li.active a{
     margin-top: -20px;
     width: 100%;
     height:1vh;
+    z-index: 100;
 }
 .filled{
     width:0;
