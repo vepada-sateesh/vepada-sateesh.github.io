@@ -327,6 +327,7 @@ ul li.active a{
 .linksDemo{
     display: flex;
     justify-content: space-around;
+    /* nothing */
 }
 .techstk{
     color: black;
