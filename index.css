@@ -300,25 +300,37 @@ ul li.active a{
     line-height: 20px;
     font-family: "Ubuntu";
 }
-.proj-Tech-stk{
+/* .proj-Tech-stk{
     display: flex;
-    text-align: left;
+    text-align: center;
     font-size: 12px;
     margin-top: 10px;
+
    
-}
+} */
 .proj-Tech-stk>span{
     color: #DC143C;
     font-weight: bold;
-    margin-right: 5px;
-    text-decoration: underline;
+    /* margin-right: 5px; */
+    /* text-decoration: underline; */
     font-size: 14px;
+    display: flex;
+    margin: auto;
+    text-align: center;
 }
 .Proj-icons{
     display: flex;
     justify-content: space-around;
     margin: 20px 0px;
     /* border: 3px solid teal; */
+}
+.linksDemo{
+    display: flex;
+    justify-content: space-around;
+}
+.techstk{
+    color: black;
+    margin-right: 6%;
 }
 .fa-eye{
     font-size: 25px;
