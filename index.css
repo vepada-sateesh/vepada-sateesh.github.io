@@ -187,10 +187,19 @@ ul li.active a{
     width:60%;
     margin-right: 8%;
   }
-  .meInfo-left p{
+  .meInfo-left p:last-child{
     line-height: 25px;
     margin-top: 4%;
-    font-size: 16px;
+    font-size: 18px;
+    text-align: justify;
+    /* nothing */
+  }
+  .meInfo-left p:first-child{
+    line-height: 25px;
+    margin-top: 4%;
+    font-size: 18px;
+    text-align: justify;
+
     /* nothing */
   }
 /* -----------------Technical skills----------------- */
