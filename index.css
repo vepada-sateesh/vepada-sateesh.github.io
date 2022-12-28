@@ -220,10 +220,9 @@ ul li.active a{
     gap:15px
 }
 #tech-specs>div{
-    /* border:2px solid red; */
     height:144px;
     width:120px;
-    background-color: #788097A0;
+    background-color: whitesmoke;
     text-align: center;
     padding: 20px;
     border-radius: 12px;
@@ -240,6 +239,7 @@ ul li.active a{
     margin: auto;
     justify-content: center;
     margin-top: 100px;
+    
 }
 .circle {
     align-items: center;
@@ -254,6 +254,8 @@ ul li.active a{
     position: relative;
     width: 6rem;
     background-image: linear-gradient(180deg,#87e6fb 0,#ffc05c);
+    animation: mymove 5s infinite;
+    
 }
 .circle>div{
     background-color: white;
@@ -263,6 +265,7 @@ ul li.active a{
     display: flex;
     justify-content: center;
     align-items: center;
+     
 }
 .complete-text{
     display: flex;
@@ -275,6 +278,13 @@ ul li.active a{
     font-size: 16px;
     color: #fca61f;
 }
+@keyframes mymove {
+    from {top:60px; left: -300px;background-image: linear-gradient(45deg,#87e6fb 0,#ffc05c);}
+    25%{top:60px;background-image: linear-gradient(90deg,#87e6fb 0,#5cff92);}
+    50%{top:-30px;background-image: linear-gradient(90deg,#87e6fb 0,#5cff92);}
+    75%{top:0px;background-image: linear-gradient(90deg,#87e6fb 0,#e44611)}
+    to {left: 300px;background-image: linear-gradient(180deg,#87e6fb 0,#ffc05c);}
+  }
 /* --------------------projects grid---------------------- */
 .projects{
     width:80%;
@@ -612,7 +622,11 @@ ul li.active a{
         width: 100%;
         text-align: center;
       }
-      .meInfo-right svg{
+      /* .meInfo-right svg{
+        height:60%;
+        width:60%;
+      } */
+      .meInfo-right img{
         height:60%;
         width:60%;
       }
@@ -623,6 +637,11 @@ ul li.active a{
     #calender-css{
         overflow: scroll;
     }
+    @keyframes mymove {
+        from {left: -150px;background-image: linear-gradient(45deg,#87e6fb 0,#ffc05c);}
+        50%{background-image: linear-gradient(90deg,#87e6fb 0,#5cff92);}
+        to {left: 150px;background-image: linear-gradient(180deg,#87e6fb 0,#ffc05c);}
+      }
 }
 @media all and (min-width: 699px) and (max-width: 957px){
     #tech-specs{
