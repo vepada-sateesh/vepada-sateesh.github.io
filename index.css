@@ -281,8 +281,8 @@ ul li.active a{
 @keyframes mymove {
     from {top:60px; left: -300px;background-image: linear-gradient(45deg,#87e6fb 0,#ffc05c);}
     25%{top:60px;background-image: linear-gradient(90deg,#87e6fb 0,#5cff92);}
-    50%{top:-30px;background-image: linear-gradient(90deg,#87e6fb 0,#5cff92);}
-    75%{top:0px;background-image: linear-gradient(90deg,#87e6fb 0,#e44611)}
+    50%{top:-200px;background-image: linear-gradient(90deg,#87e6fb 0,#e44611);}
+    85%{top:0px;background-image: linear-gradient(90deg,#87e6fb 0,#e44611)}
     to {left: 300px;background-image: linear-gradient(180deg,#87e6fb 0,#ffc05c);}
   }
 /* --------------------projects grid---------------------- */
