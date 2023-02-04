@@ -93,4 +93,5 @@ const welcomeloadfun=()=>{
 
 }
 welcomeloadfun()
-setInterval(welcomeloadfun,2000)
+setInterval(welcomeloadfun, 2000)
+

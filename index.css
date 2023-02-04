@@ -749,3 +749,19 @@ ul li.active a{
 }
 
 
+#calender-css a{
+    display: none;
+}
+#calender-css span{
+    display: none;
+}
+#calender-css path{
+    display: none;
+}
+#calender-css div.d-flex.flex-items-center{
+    display: none;
+}
+#calender-css{
+    border: none;
+}
+
