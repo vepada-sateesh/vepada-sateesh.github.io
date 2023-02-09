@@ -111,6 +111,7 @@ ul li.active a{
     margin-left: -10%;
     text-align: center;
     border-radius: 100%;
+   
 }
 
 #left-profile>h3{
@@ -131,6 +132,10 @@ ul li.active a{
     border-radius: 50%;
     border: 0.5px solid #DC143C;
     padding: 5px;
+
+}
+#right-profile img:hover{
+    transform: scale(1.5,1.5);
 }
 /* -------------------------------> typing animation <------------------ */
 .container{
@@ -148,7 +153,6 @@ ul li.active a{
 
   }
   .text.sec-text::before{
-   
     content: "";
     position: absolute;
     top: 0;
@@ -183,6 +187,7 @@ ul li.active a{
     width:80%;
     margin: auto;
   }
+  
   .meInfo-left{
     width:60%;
     margin-right: 8%;
@@ -265,6 +270,7 @@ ul li.active a{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
      
 }
 .complete-text{
@@ -305,6 +311,11 @@ ul li.active a{
 .projects>div>img{
     width: 100%;
     height: 50%;
+    transition: width 5s height 5s;
+}
+.projects>div>img:hover{
+    transform: scale(2,2);
+    
 }
 .proj-title{
     display: flex;
@@ -643,6 +654,18 @@ ul li.active a{
         to {left: 150px;background-image: linear-gradient(180deg,#87e6fb 0,#ffc05c);}
       }
 }
+/* -------------------------app theme----------------- */
+
+#dark{
+    float: left;
+    position: fixed;
+    font-size: 35px;
+    padding-top: 15px;
+    left:15px;
+    top: 0px;
+    z-index: 1500;
+    
+}
 @media all and (min-width: 699px) and (max-width: 957px){
     #tech-specs{
         width:80%;
@@ -655,6 +678,10 @@ ul li.active a{
     }
     #tech-specs>div{
         margin: auto;
+    }
+    #dark{
+        top: 0px;
+        z-index: 1500;
     }
    
 }
@@ -700,6 +727,10 @@ ul li.active a{
         height:35px;
         margin-top:10px
     }
+    #dark{
+        top: 0px;
+        z-index: 1500;
+    }
     
     
 }
@@ -744,7 +775,15 @@ ul li.active a{
         border: 1px solid #DC143C;
         width: 50%;
     }
-    
+    #dark{
+        float: left;
+        position: fixed;
+        left:15px;
+        font-size: 20px;
+        padding-top: 15px;
+        top: 15px;
+        z-index: 1500;
+   }
     
 }
 
@@ -764,4 +803,5 @@ ul li.active a{
 #calender-css{
     border: none;
 }
+
 

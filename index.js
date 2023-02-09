@@ -49,7 +49,7 @@ setInterval(textloadFun,8000)
        proxy (username) {
          return fetch(`https://your-proxy.com/github?user=${username}`)
        }
-    }).then(r => r.text())
+    })
 
 
 // --------------------------------------------------------------------------------------------------
@@ -95,3 +95,34 @@ const welcomeloadfun=()=>{
 welcomeloadfun()
 setInterval(welcomeloadfun, 2000)
 
+document.querySelector("#dark").addEventListener("click", () => {
+    var theme = localStorage.getItem("theme") || "light"
+    theme == "dark"?localStorage.setItem("theme","light"):localStorage.setItem('theme',"dark")
+    if (theme == "dark") {
+        document.body.style.backgroundColor = " #121212"
+        document.body.style.color = "white";
+        document.querySelector("#dark").innerHTML = '<i class="fa-regular fa-lightbulb"></i>'
+        document.querySelector(".container").style.backgroundColor = "white"
+        document.querySelector("nav").style.backgroundColor = "lightgrey"
+        var techs = document.querySelectorAll("#tech-specs div p")
+        for (i = 0; i < techs.length; i++){
+            techs[i].style.color = "black"
+        }
+        var techstk = document.querySelectorAll(".techstk")
+        for (i = 0; i < techstk.length; i++){
+            techstk[i].style.color = "white"
+        }
+        
+    } else if (theme == "light" ) {
+        document.body.style.backgroundColor = "white"
+        document.body.style.color = "black";
+        document.querySelector("#dark").innerHTML = '<i class="fa-solid fa-lightbulb"></i>'
+        
+        document.querySelector(".container").style.backgroundColor = "white"
+        var techstk = document.querySelectorAll(".techstk")
+        for (i = 0; i < techstk.length; i++){
+            techstk[i].style.color = "black"
+        }
+        document.querySelector("nav").style.backgroundColor = "white"
+    }
+})

@@ -27,12 +27,13 @@
 </head>
 <body>
     <div><p id="welcome">Welcome!</p></div>
+    
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i id="top" class="fas fa-bars"></i>
         </label>
-        <label class="logo">Sateesh</label>
+        <label class="logo">Sateesh </label>
         <ul>
             <div class="close-btn"><h1><button><i class="fa-solid fa-circle-xmark"></i></button></h1></div>
             <li class="active" ><a href="#">Home</a></li>
@@ -51,18 +52,19 @@
             })
         </script>
     </nav>
+    <a id="dark"><i class="fa-solid fa-lightbulb"></i></a>
     <div class="progress-bar">
         <div class="filled">
             <p class="pro-value"></p>
         </div>
     </div>
-    <div class="profile-intro" data-aos="slide-up" >
+    <div class="profile-intro" data-aos="slide-left" >
         <div id="left-profile">
             <h3>Hello, my name is</h3>
             <h1>Sateesh Vepada</h1>
             <div class="container">
                 <span class="text first-text">i'm a</span>
-                <span  class="text sec-text"></span>
+                <span  class="text sec-text" id="second-txt"></span>
             </div>
             <div id="resum-sec"><button id="resume-btn"><a href="./resume/VEPADA_SATEESH_RESUME (2).pdf" download >Resume<i class="fa-solid fa-download"></i></a></button></div>
         </div>
@@ -116,6 +118,38 @@
     <div class="complete-text">Completed</div>
     <div class="project-text">projects</div>
     <div class="projects" id="Proj-link">
+        <div data-aos="slide-up">
+            <img src="./project images/trendy.png" alt="trendy vibes">
+            <h3 class="proj-title">nnnow Clone</h3>
+            <p class="proj-dscr"> nnnow.com is the largest online cosmetics, skincare, hair care & fragrances store,Completed this project with team of 5 in 3 days,implemented featurs like private routing,Multiple user support,filtering,cart,checkout pages,user authentication using jsonweb token & bcrypt and admin panel.</p>
+            <p class="proj-Tech-stk"><span><span class="techstk">Tech Stacks:   </span> React, Redux, ChakraUI, Axios, HTML, CSS, Js, nodejs, express.js, MongoDb</span>
+                
+            </p>
+            <div class="Proj-icons">
+                <div><a href="https://trendyvibes-xi.vercel.app/" target="_blank"><i class="fa-solid fa-eye"></i></a></i></div>
+                <div><a href="https://github.com/vepada-sateesh/diligent-pies-1359" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+            </div>
+            <div class="linksDemo"><h4>Live Demo</h4><h4>Code Base</h4></div>
+            <div>
+               
+            </div>
+        </div>
+        <div data-aos="slide-up">
+            <img src="./project images/NatureBasket.png" alt="NatureBasket">
+            <h3 class="proj-title">Nature's basket Clone</h3>
+            <p class="proj-dscr"> NatureBasket India's largest online grocer,Completed this project alone in 3 days,implemented featurs like private routing,Multiple user support,filtering,cart,checkout pages,user authentication using json-server api and admin panel.</p>
+            <p class="proj-Tech-stk"><span><span class="techstk">Tech Stacks:   </span> React, Redux, ChakraUI, Axios, HTML,CSS,Js</span>
+                
+            </p>
+            <div class="Proj-icons">
+                <div><a href="https://grocerystore-three.vercel.app/" target="_blank"><i class="fa-solid fa-eye"></i></a></i></div>
+                <div><a href="https://github.com/vepada-sateesh/Grocery-store" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+            </div>
+            <div class="linksDemo"><h4>Live Demo</h4><h4>Code Base</h4></div>
+            <div>
+               
+            </div>
+        </div>
         <div data-aos="slide-up">
             <img src="./project images/bigbasket.png" alt="bigbasket">
             <h3 class="proj-title">bigbasket Clone</h3>
@@ -178,7 +212,7 @@
             
     </div>
     <div id="git-headg"><h3>GitHub Status</h3></div>
-    <div id="calender-css" class="calendar">
+    <div id="calender-css" class="calendar" data-aos="slide-right">
         
         Loading the data just for you.
     </div>
