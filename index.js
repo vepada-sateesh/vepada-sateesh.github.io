@@ -25,7 +25,7 @@ const textloadFun=()=>{
     },0)
     setTimeout(()=>{
         text.textContent="Full Stack Web Developer"
-    },4000)
+    },4100)
 
 }
 textloadFun()
@@ -125,4 +125,10 @@ document.querySelector("#dark").addEventListener("click", () => {
         }
         document.querySelector("nav").style.backgroundColor = "white"
     }
+})
+
+// -----------------------jquery for links-------------
+$(document).on("click","ul li",function(){
+    //console.log("cliked")
+    $(this).addClass("active").siblings().removeClass("active")
 })
