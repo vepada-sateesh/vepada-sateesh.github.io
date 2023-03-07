@@ -155,6 +155,7 @@ ul li:hover{
 #right-profile img {
   animation: reverse-rotate 2s linear infinite;
   margin-top: -8px;
+  
 }
 
 @keyframes reverse-rotate {
@@ -176,6 +177,7 @@ ul li:hover{
   border-top: 8px solid #fd3c37;
   border-bottom: 12px solid #87e6fb;
   border-right: 5px solid #ffc05c;
+  
 }
 
 @keyframes rotate {
@@ -754,6 +756,9 @@ ul li:hover{
       left: 150px;
       background-image: linear-gradient(180deg, #87e6fb 0, #ffc05c);
     }
+  }
+  .filled{
+    display: none;
   }
 }
 /* -------------------------app theme----------------- */
