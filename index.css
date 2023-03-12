@@ -9,6 +9,7 @@
 }
 body {
   font-family: "Ubuntu", sans-serif;
+  
 }
 #welcome {
   text-align: center;
@@ -79,7 +80,7 @@ ul li a {
 
 ul li a:hover {
   transform: translateY(-10px);
-  color: salmon;
+  color: #fd3c37;
 }
 ul li a:hover::before{
   content: "<";
@@ -89,6 +90,7 @@ ul li a:hover::after{
 }
 ul li:hover{
    transform: scale(1.2,1.2);
+   transition: 1s;
 }
 /* -----------------> progress-bar <-------------------------- */
 .progress-bar {
@@ -117,18 +119,14 @@ ul li:hover{
 }
 #left-profile {
   width: 70%;
-  /* background-color: red; */
   height: 40vh;
   margin-top: 30px;
-  /* border: 20px solid green; */
 }
 #right-profile {
   border: 6px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  border-style: groove;
 }
 
 #left-profile > h3 {
@@ -144,18 +142,11 @@ ul li:hover{
 }
 
 #right-profile img {
-  margin-left: -4%;
-  margin-top: 10%;
   border-radius: 50%;
-  /* border: 0.5px solid #DC143C; */
-  padding: 5px;
-  transform-origin: 50% 50%;
 }
 
 #right-profile img {
   animation: reverse-rotate 2s linear infinite;
-  margin-top: -8px;
-  
 }
 
 @keyframes reverse-rotate {
@@ -174,9 +165,9 @@ ul li:hover{
   width: 300px;
   border-radius: 50%;
   border-left: 12px solid #5cff92;
-  border-top: 8px solid #fd3c37;
-  border-bottom: 12px solid #87e6fb;
-  border-right: 5px solid #ffc05c;
+  border-top: 12px solid salmon;
+  border-bottom: 12px solid powderblue ;
+  border-right: 12px solid #ffc05c;
   
 }
 
@@ -384,6 +375,7 @@ ul li:hover{
 }
 .projects > div > img:hover {
   transform: scale(2, 2);
+  transition: 1s;
 }
 /*  */
 .webiframe {
