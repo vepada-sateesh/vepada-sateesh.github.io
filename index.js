@@ -92,7 +92,7 @@ document.querySelector("#dark").addEventListener("click", () => {
   localStorage.setItem("theme", theme == true ? false : true);
   var theme = JSON.parse(localStorage.getItem("theme"));
   if (theme == false) {
-      document.body.style.backgroundColor = "#48515D";
+      // document.body.style.backgroundColor = "#48515D";
       document.body.style.backgroundImage = 'url("https://media.tenor.com/T7LNqpcJEccAAAAM/stars-night.gif")';
 
     document.body.style.color = "white";
@@ -128,3 +128,4 @@ $(document).on("click", "ul li", function () {
   //console.log("cliked")
   $(this).addClass("active").siblings().removeClass("active");
 });
+
